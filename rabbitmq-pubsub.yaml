@@ -1,0 +1,14 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: rabbitmq-pubsub
+spec:
+  type: pubsub.rabbitmq
+  version: v1
+  metadata:
+  - name: host
+    value: "amqps://xearmcdi:JYFuUhTsZpseMoG0D6u1RQCtIJ0LL_YZ@beaver.rmq.cloudamqp.com/xearmcdi"
+  - name: durable
+    value: "true"
+  - name: deletedWhenUnused
+    value: "false"
